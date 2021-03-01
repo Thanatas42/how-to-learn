@@ -82,15 +82,20 @@
   width: 183px;
   top: 30px;
   left: 64px;
+  margin: 0;
+  padding: 0;
   z-index: 3;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.logo_place_footer {
+  position:absolute;
+  height: 32px;
+  width: 183px;
+  top: 60px;
+  left: 64px;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
 }
 
 /* "рабочая область" для контейнера two-columns */
@@ -158,17 +163,22 @@
   flex-direction: column;
 }
 
+.digits_section-indent {
+  margin: 100px 0;
+}
 .section-title {
   text-align: center;
   width: 60%;
   font-size: 60px;
   font-weight: bold;
   line-height: 1.15;
+  margin: 0;
+  padding: 0;
 }
 
 .section-subtitle {
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0 0;
   width: 60%;
   font-size: 24px;
   font-weight: normal;
@@ -177,22 +187,22 @@
 
 .table {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 1100px;
-  padding-top: 60px;
-  padding-bottom: 0;
-  margin: 0 auto;
+  margin: 0 auto 100px;
+}
+
+.table__cellrow {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 0;
+  margin: 0;
 }
 
 /* карточка факта и содержимое этой карточки */
 .table__cell {
   width: 250px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .table__heading {
@@ -203,7 +213,7 @@
   line-height: 1.15;
 }
 
-.table__cell {
+.table__text {
   margin: 0 0 20px;
   padding: 0;
   font-size: 18px;
@@ -223,7 +233,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 100px 0 0;
   height: 790px;
   background-color: #f2f2f2;
 }
@@ -256,6 +265,7 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
+  text-decoration: none;
   color: #2f80ed;
 }
 
@@ -265,4 +275,175 @@
   left : 0;
   width: 867px;
   height: 637px;
+}
+
+/* Ниже идет секция kaufman и ее свойства */
+.kaufman {
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  overflow: hidden;
+}
+
+/*модификатор сброса отступа для секции */
+.kaufman_section-indent {
+  padding: 90px 0;
+}
+
+.section-title_theme_dark {
+  text-align: center;
+  width: 60%;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: white;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.section-subtitle_theme_dark {
+  text-align: center;
+  margin-top: 20px;
+  width: 60%;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  color: white;
+  z-index: 1;
+}
+
+.table_theme_dark {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1100px;
+  color: white;
+  z-index: 1;
+}
+
+.table__cellrow_theme_dark {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 0;
+  margin: 0;
+  color: white;
+}
+
+/* карточка факта и содержимое этой карточки */
+.table__cell_theme_dark {
+  width: 250px;
+  list-style: none;
+  color: white;
+}
+
+.table__heading_theme_dark {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+  color: white;
+}
+
+.table__text_theme_dark {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: white;
+  z-index: 0;
+}
+
+.triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+}
+
+/* ниже идет свойства footer */
+.footer {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  min-height: 350px;
+  padding: 60px 0 40px;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-end;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  padding: 18px 0;
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  color: white;
+}
+
+.footer__column-link {
+  display: flex;
+
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.footer__social-icon {
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
