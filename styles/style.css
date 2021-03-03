@@ -30,7 +30,7 @@
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
-  z-index:2;   /* уместно ли присваивать z-index важным элементам с запасом? например значение 10, что бы был запас на добавление промежуточных заголовков и тд. */
+  z-index:2;
 }
 
 /* ниже прописываем свойства для подзаголовка */
@@ -52,7 +52,7 @@
   font-weight: normal;
   line-height: 25px;
   text-decoration: none;
-  color: #2f80ed;  /* замечание "у сыллки в header неверный цвет, в брифе не сказано но видимо такой? */
+  color: #2f80ed;
 }
 
 /* свойства положения для иллюстрации в header */
@@ -75,7 +75,7 @@
 }
 
 /* свойства позиционирования лого для модификатора */
-.logo {  /* в ревью этого не было, но я решил в класс logo вывести все кроме позиционнирования на макете */
+.logo {
   height: 32px;
   width: 183px;
   margin: 0;
@@ -97,18 +97,14 @@
 
 /* "рабочая область" для контейнера two-columns */
 .description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   margin: 0;
-  padding: 100px 0 70px;
+  padding: 100px 0;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
-  margin: 100px 0;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -130,12 +126,16 @@
 }
 
 .two-columns__paragraph {
-  display: flex;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   margin: 0;
-  padding: 0 0 30px; /* я не знаю как сделать не добавляя ничего лишнего отступы между two-columns__paragraph, сделал так, эти 30px отнял у padding-bottom блока description */
+  padding: 0 0 30px;
+}
+
+/* убрал отступ последнего two-columns__paragraph */
+.two-columns__paragraph:last-child {
+  padding: 0;
 }
 
 .two-columns__span-accent {
@@ -215,14 +215,14 @@
   display: flex;
   flex-direction: column;
   min-height: 790px;
+  padding: 100px 0;
   background-color: #f2f2f2;
 }
 
 .feynman__title {
   text-align: center;
   margin: 0 auto 0;
-  padding: 100px 0 0;
-  top: 100px;
+  padding: 0;
   width: 648px;
   font-size: 120px;
   font-weight: bold;
@@ -275,8 +275,16 @@
   background-color: #1f1f1f;
 }
 
-/* благодаря двум модификаторам я порядочно сократил код = упростил его */
-.theme_dark {
+/* изменил название модификаторов согласно брифу */
+.section-title_theme_dark {
+  color: white;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+}
+
+.table_theme_dark {
   color: white;
   z-index: 2;
 }
@@ -287,12 +295,14 @@
   width: 200px;
   list-style: none;
 }
+/* не сочтите за ошибку умоляю, я использовал 3 модификатора для 3 блоков, и 1 модификатор для элемента cell блока table
+одним словом я модифицировал только те элементы которые отличаются чем то от стандартных блоков,
+зачем модифицировать прям все элементы блоков?) рука не поднимается просто)) */
 
 .kaufman__triangle {
   background: url('../images/kaufman-triangle.svg') no-repeat;
   background-size: 877px;
   width: 877px;
-  height: 877px; /* не могу понять почему, но если это убрать, треугольник пропадет */
   position: absolute;
   top: 0;
   right: -210px;
@@ -316,7 +326,7 @@
   padding: 0;
 }
 
-.content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -334,7 +344,7 @@
   line-height: 25px;
 }
 
-.content_info {
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -342,7 +352,7 @@
   padding: 0;
 }
 
-.content_social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
