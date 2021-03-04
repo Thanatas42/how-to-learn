@@ -215,7 +215,7 @@
   display: flex;
   flex-direction: column;
   min-height: 790px;
-  padding: 100px 0;
+  padding: 100px 0 0;
   background-color: #f2f2f2;
 }
 
@@ -295,14 +295,12 @@
   width: 200px;
   list-style: none;
 }
-/* не сочтите за ошибку умоляю, я использовал 3 модификатора для 3 блоков, и 1 модификатор для элемента cell блока table
-одним словом я модифицировал только те элементы которые отличаются чем то от стандартных блоков,
-зачем модифицировать прям все элементы блоков?) рука не поднимается просто)) */
 
 .kaufman__triangle {
   background: url('../images/kaufman-triangle.svg') no-repeat;
   background-size: 877px;
   width: 877px;
+  height: 877px; /* видимо случайно удалил, очевидно что высота нужна) */
   position: absolute;
   top: 0;
   right: -210px;
