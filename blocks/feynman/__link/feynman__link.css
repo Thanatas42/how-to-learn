@@ -10,4 +10,10 @@
   line-height: 51px;
   text-decoration: none;
   color: #2f80ed;
+  transition: 1.5s; /* добавил для того что бы после hover возвращалось значение плавно */
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
+  transition: 1.5s;
 }

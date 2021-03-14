@@ -6,10 +6,3 @@
     transform:rotate(360deg);
   }
 }
-
-.animate_type_rotation {
-  animation: rotation 20s infinite linear;
-}
-
-/* Наверно логичнее как то кейфрейм выделить, но сделал так
-описание анимации и ее вызов сразу */

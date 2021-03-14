@@ -4,4 +4,10 @@
   line-height: 25px;
   text-decoration: none;
   color: #2f80ed;
+  transition: 1.5s; /* добавил для того что бы после hover возвращалось значение плавно */
+}
+
+.header__link:hover {
+  opacity: 0.5;
+  transition: 1.5s;
 }

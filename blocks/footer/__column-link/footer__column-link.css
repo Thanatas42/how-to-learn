@@ -7,4 +7,10 @@
   line-height: 30px;
   margin: 0;
   padding: 0;
+  transition: 1.5s; /* добавил для того что бы после hover возвращалось значение плавно */
+}
+
+.footer__column-link:hover {
+  opacity: 0.5;
+  transition: 1.5s;
 }

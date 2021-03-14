@@ -4,6 +4,7 @@
   position: absolute;
   top: 0;
   right: -210px;
+  animation: rotation 20s infinite linear;
 }
 
 /* Здесь мне ревьювер советовал добавить изображение как background-image, однако при таком

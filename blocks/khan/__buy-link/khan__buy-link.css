@@ -5,4 +5,10 @@
   font-size: 30px;
   font-weight: normal;
   line-height: 42px;
+  transition: 1.5s; /* добавил для того что бы после hover возвращалось значение плавно */
+}
+
+.khan__buy-link:hover {
+  opacity: 0.5;
+  transition: 1.5s;
 }
