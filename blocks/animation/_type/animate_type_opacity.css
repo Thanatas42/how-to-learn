@@ -1,8 +1,8 @@
-.animation_type_opacity {
+.animate_type_opacity {
 transition: 1.5s; /* добавил для того что бы после hover возвращалось значение плавно */
 }
 
-.animation_type_opacity:hover {
+.animate_type_opacity:hover {
   opacity: 0.5;
   transition: 1.5s;
 }
