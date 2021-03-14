@@ -1,0 +1,15 @@
+@keyframes rotation {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+.animation_type_rotation {
+  animation: rotation 20s infinite linear;
+}
+
+/* Наверно логичнее как то кейфрейм выделить, но сделал так
+описание анимации и ее вызов сразу */
