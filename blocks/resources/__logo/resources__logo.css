@@ -3,4 +3,17 @@
   padding: 0;
   width: 270px;
   height: 38px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.resources__logo:hover {
+  -webkit-transition: -webkit-filter .8s;
+  transition: -webkit-filter .8s;
+  -o-transition: filter .8s;
+  transition: filter .8s;
+  transition: filter .8s, -webkit-filter .8s;
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
 }

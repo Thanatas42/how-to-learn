@@ -1,4 +1,6 @@
 .footer__column-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   color: white;
@@ -7,10 +9,14 @@
   line-height: 30px;
   margin: 0;
   padding: 0;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
   transition: 1.5s; /* добавил для того что бы после hover возвращалось значение плавно */
 }
 
 .footer__column-link:hover {
   opacity: 0.5;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
   transition: 1.5s;
 }

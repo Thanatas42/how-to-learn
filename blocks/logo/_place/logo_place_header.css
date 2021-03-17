@@ -2,4 +2,19 @@
   position:absolute;
   top: 30px;
   left: 64px;
+  color: black;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: -o-linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size .3s;
+  -o-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.logo_place_header:hover, .logo_place_header:focus {
+  background-size: 100% 2px;
 }
