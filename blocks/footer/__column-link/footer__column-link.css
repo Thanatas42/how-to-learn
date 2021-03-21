@@ -9,14 +9,15 @@
   line-height: 30px;
   margin: 0;
   padding: 0;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s; /* добавил для того что бы после hover возвращалось значение плавно */
+  opacity: .25;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; /* добавил для того что бы после hover возвращалось значение плавно */
 }
 
 .footer__column-link:hover {
-  opacity: 0.5;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  opacity: 1;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
 }

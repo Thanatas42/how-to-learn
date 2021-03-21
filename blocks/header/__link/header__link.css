@@ -4,14 +4,14 @@
   line-height: 25px;
   text-decoration: none;
   color: #2f80ed;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 
 .header__link:hover {
   opacity: 0.5;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
 }
