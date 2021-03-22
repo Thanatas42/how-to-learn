@@ -6,5 +6,5 @@ The site-project was made within the framework of 2 project works. The main goal
 Master the use of animation, keyframes, etc. mastering fluxbox layout, and bringing the file structure to the BEM system.
 
 Дальнейшие планы по доработке проекта
-В планах адаптировать сайт под разные устройства, обеспечить кроссбраузерность.
+В планах адаптировать сайт под разные устройства, обеспечить кроссбраузерность(:white_check_mark:).
 Также доработать некоторые анимации (перемещание по якорной ссылке и тп.).
