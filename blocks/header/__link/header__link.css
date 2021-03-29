@@ -1,12 +1,18 @@
 .header__link {
-  font-size: 18px;
+  max-width: 50%;
+  font-size: 28px;
   font-weight: normal;
-  line-height: 25px;
+  line-height: 32px;
   text-decoration: none;
   color: #2f80ed;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .header__link:hover {
@@ -14,4 +20,20 @@
   -webkit-transition: .8s;
   -o-transition: .8s;
   transition: .8s;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__link {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__link {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+  }
 }
