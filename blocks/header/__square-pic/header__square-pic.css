@@ -1,8 +1,31 @@
 .header__square-pic {
   position: absolute;
-  height: 568px;
-  width: 568px;
-  top: 64px;
+  height: 670px;
+  width: 670px;
+  bottom: 16%;
   right: 0;
   background-color: #2f80ed;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__square-pic {
+    height: 568px;
+    width: 568px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__square-pic {
+    height: 360px;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__square-pic {
+    height: 180px;
+    width: 180px;
+    bottom: 5%;
+  }
 }

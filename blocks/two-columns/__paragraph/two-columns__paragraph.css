@@ -4,8 +4,27 @@
   line-height: 34px;
   margin: 0;
   padding: 0 0 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }
 
 .two-columns__paragraph:last-child {
   padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .two-columns__paragraph {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .two-columns__paragraph {
+    padding: 0 0 18px;
+  }
 }
