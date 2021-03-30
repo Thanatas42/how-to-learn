@@ -5,6 +5,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
+  margin: auto;
+  padding: 100px 0 0;
+  width: calc(100% - 10%);
+}
+
+@media screen and (max-width: 768px) {
+  .two-columns {
+    width: calc(100% - 8%);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .two-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20%;
+  }
 }

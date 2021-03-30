@@ -1,9 +1,27 @@
 .two-columns__brief {
-  max-width: 175px;
+  width: 13.7%;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
   color: #2f80ed;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .two-columns__brief {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .two-columns__brief {
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+    padding-bottom: 4%;;
+  }
 }
